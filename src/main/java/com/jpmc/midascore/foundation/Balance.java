@@ -20,6 +20,9 @@ public class Balance {
     public void setAmount(float amount) {
         this.amount = amount;
     }
+     public boolean isLessThan(Balance other) {
+        return this.amount < other.amount;
+    }
 
     @Override
     public String toString() {
